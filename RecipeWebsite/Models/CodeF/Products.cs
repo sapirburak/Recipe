@@ -6,14 +6,14 @@ namespace MVC1.Models.dbcodeF
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Products
+    public partial class Product
     {
-               public int IdProduct { get; set; }
+               public int ID { get; set; }
                 public string Name { get; set; }
                 public string KosherType { get; set; }
                 public int Calorie { get; set; }
                 public bool Gluten { get; set; }
                 public bool Vegan { get; set; }
-                    public decimal Price { get; set; }
+                public decimal Price { get; set; }
     }
 }

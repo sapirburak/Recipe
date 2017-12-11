@@ -9,7 +9,7 @@ namespace MVC1.Models.dbcodeF
  
     public partial class Recipe
     {
-          public int IdRecipe { get; set; }
+          public int Id { get; set; }
                 public string Name { get; set; }
                 public string KosherType { get; set; }
         

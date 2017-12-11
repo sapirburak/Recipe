@@ -10,6 +10,6 @@ namespace MVC1.Models.dbcodeF
     public partial class Type
     {
            public string TypeName { get; set; }
-                public int IdType { get; set; }
+                public int Id { get; set; }
     }
 }

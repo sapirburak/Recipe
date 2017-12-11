@@ -9,7 +9,15 @@ namespace MVC1.Models.dbcodeF
   
     public partial class Kitchen
     {
-            public virtual int IdKitchen { get; set; }
-            public virtual int IdUser { get; set; }
+      [Key]
+       public int ID { get; set; }
+          [ForeignKey("User")]
+        [Column(Order = 1)]
+       public string UserName { get; set; }
+          [ForeignKey("User")]
+          [Column(Order = 2)]
+          public string Password { get; set; }
+        public virtual List<User> Users { get; set; }
+            
     }
 }

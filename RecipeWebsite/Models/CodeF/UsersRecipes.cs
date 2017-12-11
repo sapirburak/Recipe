@@ -8,7 +8,10 @@ namespace MVC1.Models.dbcodeF
 
     public partial class UsersRecipes
     {
-             public int IdUser { get; set; }
-                public int IdRecipe { get; set; }
+        public int ID { get; set; }
+        public int UserId { get; set; }
+        public int RecipeId { get; set; }
+                public virtual List<Recipe> Recipes { get; set; }
+                public virtual List<User> Users { get; set; }
     }
 }
